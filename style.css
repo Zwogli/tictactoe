@@ -12,8 +12,11 @@ td{
   height: 133px;
   border: 5px solid black;
   position: relative;
+  cursor: pointer;
 }
-
+td:hover{
+  background-color: rgba(25,221,0,0.1);
+}
 tr:first-child td{
   border-top: 0;
 }
