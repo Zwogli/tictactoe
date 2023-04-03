@@ -2,8 +2,10 @@ let fields = [],
     currentShape = 'cross';
 
 function fillShape(id){
-  if (currentShape == 'cross'){
-    currentShape = 'circle';
+  if (!fields[id]) {        //* ! = false , !! = true
+    
+    if (currentShape == 'cross'){
+      currentShape = 'circle';
     document.getElementById('player-2').classList.remove('player-inactive');
     document.getElementById('player-1').classList.add('player-inactive');
   }else{
@@ -24,6 +26,7 @@ function draw(){
     if (fields[i] == 'cross') {
       document.getElementById('cross-' + i).classList.remove('d-none');
     }
+  }
   }
 }
 
