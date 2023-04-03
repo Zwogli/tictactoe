@@ -31,13 +31,14 @@ body{
 }
 .game-area{
   position: relative;
+  width: 399px;
 }
 table{
   border-collapse: collapse;
 }
-tr{
+/* tr{
   width: 399px;
-}
+} */
 td{
   width: 133px;
   height: 133px;
@@ -112,6 +113,38 @@ tr td:last-child{
 .restart-btn:hover{
   background-color: #ffd24c7f;
 }
+#line-0{
+  top: 57px; 
+  left: 27px
+}
+#line-1{
+  top: 198px; 
+  left: 27px;
+}
+#line-2{
+  top: 338px; 
+  left: 27px
+}
+#line-3{
+  top: 199px; 
+  left: -111px;
+}
+#line-4{
+  top: 199px; 
+  left: 28px
+}
+#line-5{
+  top: 199px; 
+  left: 168px;
+}
+#line-6{
+  top: 196px; 
+  left: -31px;
+}
+#line-7{
+  top: 196px; 
+  left: -31px;
+}
 
 @keyframes zoomIn{
   from{
@@ -122,4 +155,60 @@ tr td:last-child{
     transform: scale(1);
     opacity: 1;
   }
+}
+@media(max-width: 430px){
+  .player-panel{
+    justify-content: center;
+    align-items: center;
+  }
+  #player-1, #player-2{
+    flex-direction: column;
+  }
+  .game-area{
+    width: 300px;
+    height: 300px;
+  }
+  tr, td{
+    width: 100px;
+    height: 100px;
+  }
+  .shape{
+    width: 50px;
+    height: 50px;
+  }
+  .horizontal-line{
+    width: 240px;
+  }
+  #line-0{
+  top: 43px; 
+  left: 27px
+}
+#line-1{
+  top: 151px; 
+  left: 27px;
+}
+#line-2{
+  top: 257px; 
+  left: 27px
+}
+#line-3{
+  top: 154px; 
+  left: -172px;
+}
+#line-4{
+  top: 154px; 
+  left: 30px
+}
+#line-5{
+  top: 154px; 
+  left: 131px;
+}
+#line-6{
+  top: 152px; 
+  left: 28px;
+}
+#line-7{
+  top: 152px; 
+  left: 26px;
+}
 }
