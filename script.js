@@ -70,7 +70,7 @@ if (winner) {
   console.log('Winner', winner);
   gameOver = true;
   setTimeout(function(){
-    // document.getElementById('game-over').classList.remove('d-none');
+    document.getElementById('game-over').classList.remove('d-none');
     document.getElementById('restart-btn').classList.remove('d-none');
   }, 250);
 }
