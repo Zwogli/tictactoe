@@ -70,7 +70,7 @@ if (winner) {
   console.log('Winner', winner);
   gameOver = true;
   setTimeout(function(){
-    document.getElementById('game-over').classList.remove('d-none');
+    // document.getElementById('game-over').classList.remove('d-none');
     document.getElementById('restart-btn').classList.remove('d-none');
   }, 250);
 }
@@ -83,7 +83,7 @@ function restart(){
   document.getElementById('restart-btn').classList.add('d-none');
 
   for (let i = 0; i < 8; i++) {
-    document.getElementById('line-' + i).classList.add('d-none');
+    document.getElementById('line-' + i).style.transform = 'scale(0)';
   }
   for (let i = 0; i < 9; i++) {
     document.getElementById('circle-' + i).classList.add('d-none');

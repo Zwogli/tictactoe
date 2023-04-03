@@ -29,6 +29,9 @@ body{
 .d-none{
   display: none;
 }
+.game-area{
+  position: relative;
+}
 table{
   border-collapse: collapse;
 }
