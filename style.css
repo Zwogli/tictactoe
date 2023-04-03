@@ -4,6 +4,8 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 .player-panel{
   display: flex;
@@ -61,4 +63,25 @@ tr td:last-child{
   position: absolute;
   top: 26px;
   left: 26px;
+}
+.horizontal-line{
+  height: 10px;
+  background-color: #FFD34C;
+  width: 350px;
+  position: absolute;
+  transform: scaleX(0.0);
+  transition: transform 22ms ease-in-out;
+  border: 4px solid #2F528F;
+  z-index: 5;
+}
+.make-vertical{
+  transform: rotate(90deg) scaleX(0.0);
+}
+.make-diagonal-left-right{
+  width: 470px;
+  transform: rotate(45deg) scaleX(0.0);
+}
+.make-diagonal-right-left{
+  width: 470px;
+  transform: rotate(-45deg) scaleX(0.0);
 }
