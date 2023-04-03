@@ -1,8 +1,9 @@
 let fields = [],
-    currentShape = 'cross';
+    currentShape = 'cross',
+    gameOver = false;
 
 function fillShape(id){
-  if (!fields[id]) {        //* ! = false , !! = true
+  if (!fields[id] && !gameOver) {        //* ! = false , !! = true, ! = invert boolean 
     
     if (currentShape == 'cross'){
       currentShape = 'circle';
@@ -67,5 +68,9 @@ let winner;
 }
 if (winner) {
   console.log('Winner', winner);
+  gameOver = true;
+  setTimeout(function(){
+    document.getElementById('game-over').classList.remove('d-none')
+  }, 250);
 }
 }
